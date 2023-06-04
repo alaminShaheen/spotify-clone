@@ -1,14 +1,15 @@
-import { HiHome } from "react-icons/hi";
+import { RiHome2Fill, RiHome2Line, RiSearchFill, RiSearchLine } from "react-icons/ri";
 import { BiSearch } from "react-icons/bi";
-import { Route } from "@/models/Route";
 
-export const ROUTES: Record<string, Route> = {
-	HOME: {
+export const ROUTES = {
+	Home: {
 		path: "/",
-		icon: HiHome,
+		activeIcon: RiHome2Fill,
+		inactiveIcon: RiHome2Line,
 	},
-	SEARCH: {
+	Search: {
 		path: "/search",
-		icon: BiSearch,
+		activeIcon: RiSearchFill,
+		inactiveIcon: RiSearchLine,
 	},
 } as const;
